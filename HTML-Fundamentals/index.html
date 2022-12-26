@@ -23,7 +23,9 @@
         <h2>The Basic Language of the Web: HTML</h2>
         <br />
         <img src="img/jupic.jpg" alt="author" height="100" width="100" />
-        <p>Posted by <strong>Arka Bhuiyan</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Arka Bhuiyan</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="img/post-img.jpg"
@@ -89,7 +91,7 @@
     </article>
     <aside>
       <h4>Related Posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="img/related-1.jpg"
@@ -98,7 +100,7 @@
             height="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Arka Bhuiyan</p>
+          <p class="related-author">By Arka Bhuiyan</p>
         </li>
         <li>
           <img
@@ -108,7 +110,7 @@
             height="75"
           />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Arka Bhuiyan</p>
+          <p class="related-author">By Arka Bhuiyan</p>
         </li>
         <li>
           <img
@@ -118,12 +120,14 @@
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Arka Bhuiyan</p>
+          <p class="related-author">By Arka Bhuiyan</p>
         </li>
       </ul>
     </aside>
     <footer>
-      <p>Copyright &copy; 2027 by The Code Magazine. All rights reserved.</p>
+      <p id="copyright">
+        Copyright &copy; 2027 by The Code Magazine. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
