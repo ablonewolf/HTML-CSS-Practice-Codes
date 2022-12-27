@@ -1,11 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
+  color: #444;
   font-family: sans-serif;
-  color: #111;
+  border-top: 10px solid #1098ad;
 }
 
 h1 {
