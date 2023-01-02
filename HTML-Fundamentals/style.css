@@ -20,6 +20,12 @@ nav {
   font-size: 18px;
 }
 
+nav a:link {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
 article {
   margin-bottom: 60px;
 }
