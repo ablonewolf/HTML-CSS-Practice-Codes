@@ -7,12 +7,10 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
-
-  position: relative;
 }
 
 .container {
-  width: 700px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -25,7 +23,7 @@ nav {
 
 nav a:link {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 15px;
   margin-top: 10px;
 }
 
@@ -37,7 +35,7 @@ article {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .post-header {
@@ -197,4 +195,43 @@ h1::first-letter {
 /* selected adjacent paragraphs to all h3 tags */
 h3 + p {
   color: red;
+}
+
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+article {
+  width: 820px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
