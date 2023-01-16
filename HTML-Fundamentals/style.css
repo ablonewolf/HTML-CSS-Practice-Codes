@@ -25,7 +25,7 @@ nav {
 nav a:link {
   display: inline-block;
   margin-right: 15px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 article {
@@ -94,6 +94,10 @@ p {
   margin-bottom: 15px;
 }
 
+.author {
+  margin: 0px;
+}
+
 ul,
 ol {
   margin-left: 50px;
@@ -109,10 +113,10 @@ li:last-child {
   margin-bottom: 0;
 }
 
-li > img {
+/* li > img {
   margin-right: 10px;
   margin-bottom: 10px;
-}
+} */
 
 /* footer p {
   font-size: 16px;
@@ -204,7 +208,9 @@ h3 + p {
   color: red;
 }
 
-.author {
+/* styling layouts using float */
+
+/* .author {
   float: left;
   margin-left: 20px;
   margin-top: 10px;
@@ -241,4 +247,39 @@ aside {
 
 footer {
   clear: both;
+} */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-author {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
 }
