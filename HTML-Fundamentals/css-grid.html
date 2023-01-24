@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        /* height: 150px; */
       }
       .el--4 {
         background-color: goldenrod;
@@ -41,13 +41,23 @@
         /* CSS GRID */
 
         display: grid;
-        grid-template-columns: 250px 250px 150px 150px;
-        grid-template-rows: 300px 200px;
+        grid-template-columns: 3fr 3fr 2fr 2fr;
+        grid-template-rows: 150px 150px;
         /* gap : 30px; */
-        column-gap: 30px;
-        row-gap: 40px;
+        column-gap: 10%;
+        row-gap: 20px;
       }
 
+      /*     moving grid items to specific grid locations, i.e. specific column and rows */
+      .el--8 {
+        grid-column: 2 /3;
+        grid-row: 1 / 2;
+      }
+
+      .el--2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
       .container--2 {
         /* STARTER */
         display: none;
