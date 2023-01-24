@@ -60,16 +60,28 @@
       }
       .container--2 {
         /* STARTER */
-        display: none;
+
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: auto;
 
         width: 1000px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 200px 175px 150px;
+        grid-template-rows: 200px 150px;
+        gap: 30px;
+
+        /* Aligning grid columns inside a container : distributing empty space */
+        justify-content: center;
+        align-content: center;
+
+        /* Aligning items inside cell: moving items around the cell */
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>
